@@ -36,13 +36,16 @@ interface CssClasses {
     valueLarge: string;
     valueSub: string;
 }
+
 export interface PartialFormatter {
     to: (value: number) => string | number;
     from?: (value: string) => number | false;
 }
+
 export interface Formatter extends PartialFormatter {
     from: (value: string) => number | false;
 }
+
 export declare enum PipsMode {
     Range = "range",
     Steps = "steps",
@@ -50,19 +53,23 @@ export declare enum PipsMode {
     Count = "count",
     Values = "values"
 }
+
 export declare enum PipsType {
     None = -1,
     NoValue = 0,
     LargeValue = 1,
     SmallValue = 2
 }
+
 declare type WrappedSubRange = [number] | [number, number];
 declare type SubRange = number | WrappedSubRange;
+
 interface Range {
     min: SubRange;
     max: SubRange;
     [key: string]: SubRange;
 }
+
 interface BasePips {
     mode: PipsMode;
     density?: number;
