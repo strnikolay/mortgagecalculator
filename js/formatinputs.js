@@ -46,12 +46,38 @@ function calcMortage() {
 var sliderCost = document.getElementById('slider-cost');
 
 noUiSlider.create(sliderCost, {
-    start: 12000000,
+    start: 400000,
+    connect: 'lower',
+    tooltips: true,
+    step: 100000,
+    range: {
+        min:400000,
+        max:100000000,
+    },
+});
+
+var downpayment = document.getElementById('slider-downpayment');
+
+noUiSlider.create(downpayment, {
+    start: 15,
     connect: 'lower',
     tooltips: true,
     step: 1,
     range: {
-        min:0,
-        max:100000000,
+        min:15,
+        max:90,
+    },
+});
+
+var term = document.getElementById('slider-term');
+
+noUiSlider.create(term, {
+    start: 12,
+    connect: 'lower',
+    tooltips: true,
+    step: 1,
+    range: {
+        min:12,
+        max:360,
     },
 });
