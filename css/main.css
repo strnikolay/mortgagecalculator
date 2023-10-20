@@ -2,6 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+
+:root {
+	--x-1: rgba(84, 88, 99, 1);
+	--white: rgba(255, 255, 255, 1);
+	--x-2: rgba(8, 62, 76, 1);
+	--very-PC-h3-font-family: "Gilroy-Medium", Helvetica;
+	--very-PC-h3-font-weight: 500;
+	--very-PC-h3-font-size: 26px;
+	--very-PC-h3-letter-spacing: 0px;
+	--very-PC-h3-line-height: 129.99999523162842%;
+	--very-PC-h3-font-style: normal;
+	--very-PC-body-standart-font-family: "Gilroy-Medium", Helvetica;
+	--very-PC-body-standart-font-weight: 500;
+	--very-PC-body-standart-font-size: 16px;
+	--very-PC-body-standart-letter-spacing: 0px;
+	--very-PC-body-standart-line-height: 139.9999976158142%;
+	--very-PC-body-standart-font-style: normal;
+}
+
 :root {
 	--container-width-l: 1270px;
 	--container-padding: 15px;
@@ -97,7 +116,8 @@ body {
 
 .select-mortgage-programms {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
 	column-gap: 10px;
 	row-gap: 10px;
 	margin-bottom: 30px;
@@ -244,3 +264,90 @@ body {
 #slider-cost .noUi-handle:hover{
 	transform: scale(1.3);
 }
+
+
+
+
+
+.element {
+	width: 420px;
+	height: 302px;
+	background-image: url(../img/Rectangle\ 31.svg);
+	background-size: 100% 100%;
+  }
+  
+  .element .overlap-group {
+	position: relative;
+	height: 302px;
+	background-image: url(../img/Rectangle\ 32.svg);
+	background-size: 100% 100%;
+  }
+  
+  .element .frame {
+	display: inline-flex;
+	height: 54px;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 12px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: var(--white);
+	border-radius: 10px;
+  }
+  
+  .element .text-wrapper {
+	position: relative;
+	width: fit-content;
+	margin-top: -1px;
+	color: var(--x-1);
+	font-size: var(--very-PC-h3-font-size);
+	line-height: var(--very-PC-h3-line-height);
+	white-space: nowrap;
+	font-family: var(--very-PC-h3-font-family);
+	font-weight: var(--very-PC-h3-font-weight);
+	letter-spacing: var(--very-PC-h3-letter-spacing);
+	font-style: var(--very-PC-h3-font-style);
+  }
+  
+  .element .vector {
+	position: absolute;
+	width: 316px;
+	height: 1px;
+	top: 196px;
+	left: 20px;
+	object-fit: cover;
+  }
+  
+  /*.element .group {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	top: 237px;
+	left: 355px;
+	background-color: var(--x-2);
+	border-radius: 32.5px;
+  }*/
+  
+  .element .polygon {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	top: 237px;
+	left: 355px;
+  }
+  
+  .element .div {
+	position: absolute;
+	width: 295px;
+	top: 213px;
+	left: 20px;
+	color: var(--white);
+	font-size: var(--very-PC-body-standart-font-size);
+	line-height: var(--very-PC-body-standart-line-height);
+	font-family: var(--very-PC-body-standart-font-family);
+	font-weight: var(--very-PC-body-standart-font-weight);
+	letter-spacing: var(--very-PC-body-standart-letter-spacing);
+	font-style: var(--very-PC-body-standart-font-style);
+  }
+  

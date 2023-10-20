@@ -10,10 +10,10 @@ document.querySelector('#it-value').value= programIT;
 document.querySelector('#gov-value').value= programGov;
 document.querySelector('#zero-value').value= programZero;
 
-document.querySelector('#base-text').innerText =  percentFormatter.format(programBase);
+/*document.querySelector('#base-text').innerText =  percentFormatter.format(programBase);
 document.querySelector('#it-text').innerText = percentFormatter.format(programIT);
 document.querySelector('#gov-text').innerText = percentFormatter.format(programGov);
-document.querySelector('#zero-text').innerText = percentFormatter.format(programZero);
+document.querySelector('#zero-text').innerText = percentFormatter.format(programZero);*/
 
 const programInputs = document.querySelectorAll('input[name="program"]');
 const totalPercent = document.querySelector('#total-percent');
