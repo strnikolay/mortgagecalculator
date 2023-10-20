@@ -45,6 +45,8 @@ body {
 	padding: 0 var(--container-padding);
 	max-width: var(--container-width-l);
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .container-right {
@@ -74,6 +76,7 @@ body {
 
 .row {
 	display: flex;
+	flex-direction: column;
 	column-gap: 60px;
 }
 
@@ -351,3 +354,8 @@ body {
 	font-style: var(--very-PC-body-standart-font-style);
   }
   
+
+  .footer{
+	display: flex;
+	flex-direction: row;
+  }
