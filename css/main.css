@@ -81,16 +81,20 @@ body {
 }
 
 .result {
-	min-width: 400px;
+
 	flex-basis: 30%;
+	
 }
 
 /* Summary */
 .summary {
+	width: 871px;
+	height: 316px;
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 50px;
 	row-gap: 30px;
+	background-image: url("../img/Rectangle_142.svg") ;
 }
 
 /* Summary Item*/
@@ -113,6 +117,15 @@ body {
 .summary-item__value--percents {
 	/* color: rgb(6, 132, 228); */
 	color: #21bb57;
+}
+
+.lead{
+	font-size: 16px;
+	width: 296px;
+	height: 58px;
+	background-color: #083E4C;
+	border-radius: 100px;
+	padding: 20px 25px 20px 25px;
 }
 
 /* Programs */
@@ -165,6 +178,10 @@ body {
 /* Params */
 
 .params-wrapper {
+	border: 1px solid;
+	border-radius: 40px;
+	width: 420px;
+	height: 519px;
 	display: flex;
 	flex-direction: column;
 	row-gap: 30px;
@@ -358,4 +375,5 @@ body {
   .footer{
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
   }
