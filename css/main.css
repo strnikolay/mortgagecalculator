@@ -3,6 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 
+html{
+	font-size: calc(100vw / 1920 * 10);
+  }
+  
+  @media screen and (max-width: 1024px) {
+	font-size: calc(100vw / 768 * 10);
+  }
+  
+  @media screen and (max-width: 767px) {
+	font-size: calc(100vw / 500 * 10);
+  }
+  
+  @media screen and (max-width: 500px) {
+	font-size: calc(100vw / 375 * 10);
+}
+
+
+
 :root {
 	--x-1: rgba(84, 88, 99, 1);
 	--white: rgba(255, 255, 255, 1);
