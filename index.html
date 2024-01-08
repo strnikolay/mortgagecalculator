@@ -13,10 +13,17 @@
 	<body>
 
 		<div class="container">
-			<div class="title">
-				Онлайн калькулятор
-			
-			</div>
+      <header>
+        <div class="title">
+          Онлайн калькулятор			
+        </div>
+        <div class="nav-wrap">
+          <input type="button">
+          <input type="button">
+          <input type="button">
+        </div>
+      </header>
+
 			
 			<div class="row">
 				<form id="form" class="col-left">
@@ -24,20 +31,14 @@
 					<div class="elem-title">Выберите программу кредитования</div>
 					<!-- programms-wraper -->
 					<div class="select-mortgage-programms">
-
-						<input type="radio" name="program" value="base" id="base-value" class="radio-hidden" checked>
-						<label for="base-value" class="radio-label">
-							<div class="element">
-								<div class="overlap-group">
-								<div class="frame"><div class="text-wrapper">Базовая программа</div></div>
-								<img class="vector" src="./img/Vector 138.svg" />
-								<img class="polygon" src="./img/Group 557.svg" />
-								<p class="div">Выгодные условия при оформлении <br />у банков-партнеров</p>
-								
-							</div>
-						  </div>
-						</label>  
-						<input type="radio" name="program" value="it" id="it-value" class="radio-hidden">
+  					<input 
+              type="radio" 
+              name="program" 
+              value="it" 
+              id="it-value" 
+              class="radio-hidden"
+              checked
+            >
 						<label for="it-value" class="radio-label">
 							<div class="element">
 								<div class="overlap-group">
@@ -162,8 +163,8 @@
 		</div>
 
 		
-<script src="./libs/noUiSlider/nouislider.min.js"></script>
-<script src="./libs/cleaveJS/cleave.min.js"></script>
+<script src="./libs/noUiSlider/nouislider.js"></script>
+<script src="./libs/cleaveJS/cleave.js"></script>
 <script src="./js/programRates.js" type="module"></script>
 <script src="./js/formatters.js" type="module"></script>
 <script src="./js/formatinputs.js" type="module"></script>
